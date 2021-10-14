@@ -1,139 +1,163 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eazy ERP</title>
+    <title>Eazy ERP 4.0</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/footer.css">
   </head>
 
   <body>
 
+    <button id="top-btn" onclick="topFunction()" title="Go to top">🡡</button>
+
     <nav class="navbar justify-content-between sticky-top">
-      <a href="#"><img class="navbar-brand" src="images/logo2.png"></a>
+      <a href=""><img class="navbar-brand" src="images/logo.png"></a>
 
       <div id="side-nav" class="sidenav">
         <div class="navigation">NAVIGATION</div>
         <div class="close-btn" onclick="closeNav()">&times;</div>
         
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Register</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#why-us">Why us?</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
       </div>
    
       <div class="toggle-btn" onclick="openNav()">&#9776;</div>
     </nav>
 
-   
-
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="home">
       <source src="images/video.mp4" type="video/mp4">
     </video>
 
-    
-
-    
-      
-    <a class="ct-btn-scroll" href="#section2"><img id="arrow" alt="Arrow Down Icon" style="max-width: 100%;" src="images/down-arrow.png"></a>
+    <a class="ct-btn-scroll" href="#about"><img id="arrow" alt="Arrow Down Icon" style="max-width: 100%;" src="images/icons/down-arrow.png"></a>
           
-    
-    
 
-    <div id="section2">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-  
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id architecto repudiandae omnis quasi corporis cumque! Eaque doloribus deserunt iure repellendus, laboriosam recusandae ea asperiores ipsum dolorem debitis eligendi excepturi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quidem temporibus! Soluta, tenetur expedita culpa vero fugit nisi tempora fuga unde pariatur repellat facilis assumenda dolore sapiente vel, numquam voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nostrum iste eos. Quisquam vero est, totam laudantium velit, delectus consequuntur corrupti necessitatibus laborum sit quae sapiente maxime nobis animi?
-      </p></div>
+    <div id="about" class="curve" data-aos="fade-up" data-aos-duration="1000">
+      <svg class="upper-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="rgb(241, 241, 241)" fill-opacity="1" d="M0,64L34.3,74.7C68.6,85,137,107,206,112C274.3,117,343,107,411,122.7C480,139,549,181,617,170.7C685.7,160,754,96,823,69.3C891.4,43,960,53,1029,69.3C1097.1,85,1166,107,1234,106.7C1302.9,107,1371,85,1406,74.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      <div class="about-text">
+        <h1>About</h1>
+        <div class="about-div">
+          <div class="about-sec1" data-aos="fade-right">
+            <p>Enterprise Resource Planning System, a software which made a significant impact in the life of Indian Manufacturers by remodeling their existing manual system of working to Automating it.</p>
+            <p>A system which was ideally designed to track the activities has travelled leaps and miles from being a mere tracking system to a virtual member that monitors, tracks and guides the users in order to streamline and maintain the operational efficiency of the business.</p>
+            <p>Ever Since 2001, the market has been penetrated with hundreds of ERP players, everyone stating themselves as the best. As we digged down more and more we realized that most of the small & mid size companies still resisting to move towards IT due to multiple reason such as budget constraints, hassle of using 2 different softwares, Security issues, to name a few.</p>
+          </div>
+          <div class="about-sec2" data-aos="fade-left">
+            <img class="erp-img" src="images/ERP.png">
+          </div>
+        </div>
+        <div class="about-div">
+          <div class="about-sec2" style="margin-right: 20px;" data-aos="fade-right">
+            <img class="erp-img" src="images/about.png">
+          </div>
+          <div class="about-sec1" style="margin-top: 50px;" data-aos="fade-left">
+            <p>That is how Eazy came into picture with a vision of standing out from Rest with its unique preposition and simultaneously catering the key challenges of SME Manufacturers thereby making their lives Easy!</p>
+            <p>This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007. An ERP which came with the simplicity of Tally and Power of ERP.</p>
+            <p>Today, with a team of dynamic and experienced professionals at its helm, EAZY Business Solutions has become one of the fastest growing company providing a wide array of solutions like ERP, DMS, SFA, Payroll, Asset Management, CRM and Customized Solutions across various industries. It has a veritable Pan-India presence, allowing great reach and accessibility to companies across the nation.</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="var(--background)" fill-opacity="1" d="M0,64L34.3,74.7C68.6,85,137,107,206,112C274.3,117,343,107,411,122.7C480,139,549,181,617,170.7C685.7,160,754,96,823,69.3C891.4,43,960,53,1029,69.3C1097.1,85,1166,107,1234,106.7C1302.9,107,1371,85,1406,74.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </div>
+
+    <div id="why-us" class="curve" data-aos="fade-up" data-aos-duration="1000">
+      <svg class="upper-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="navy" fill-opacity="1" d="M0,64L34.3,53.3C68.6,43,137,21,206,53.3C274.3,85,343,171,411,181.3C480,192,549,128,617,117.3C685.7,107,754,149,823,181.3C891.4,213,960,235,1029,218.7C1097.1,203,1166,149,1234,138.7C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      <div class="why-us-text">
+        <h1>Why choose us?</h1>
+        <div class="why-us-div" data-aos="zoom-in-up">
+          <p>We intend to create value and empower all type of businesses by aiding efficient solutions worldwide. We aim to provide highly capable and affordable enterprise software solutions that enable the organizations to function with improved productivity and efficiency and at the same time simplifying the customer experience.</p>
+          <p>Our mission is to be a pioneer and leader in providing the most valued solution in the ERP software industry worldwide. We aim to empower our clients to exponential growth and excellence by providing innovative products and solutions.</p>
+          <p>EAZY Business Solutions is the nation's leading business solutions provider to manufacturers and traders, with unmatched capabilities and a product profile comprising of strategic, customizable, and insight-driven solutions that maximize efficiency and results. We consistently hear from clients transitioning to us from other software providers that the way we drive business by adding value and being engaged as a strategic partner is unlike anything they previously experienced. We strive to be seen as a partner who not only executes against our clients' requirements but also provides the insights and thought-leadership that fuel them.</p>
+          <img data-aos="zoom-in-down" src="images/why-us.png">
+        </div>   
+      </div>
       
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="var(--background)" fill-opacity="1" d="M0,64L34.3,53.3C68.6,43,137,21,206,53.3C274.3,85,343,171,411,181.3C480,192,549,128,617,117.3C685.7,107,754,149,823,181.3C891.4,213,960,235,1029,218.7C1097.1,203,1166,149,1234,138.7C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </div>
     
+    <div id="register" style="margin-top: -40px;" class="curve" data-aos="fade-up" data-aos-duration="1000">
+      <svg class="upper-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="aquamarine" fill-opacity="1" d="M0,160L34.3,160C68.6,160,137,160,206,160C274.3,160,343,160,411,176C480,192,549,224,617,229.3C685.7,235,754,213,823,181.3C891.4,149,960,107,1029,90.7C1097.1,75,1166,85,1234,74.7C1302.9,64,1371,32,1406,16L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      <h1>Register now!</h1>
+      <form class="form-register" data-aos="fade-up">
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Name">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="text" class="form-control" id="number" placeholder="Number">
+          <input type="text" class="form-control" id="designation" placeholder="Designation">
+          <input type="text" class="form-control" id="company" placeholder="Company Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Register!</button>
+      </form>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="var(--background)" fill-opacity="1" d="M0,160L34.3,160C68.6,160,137,160,206,160C274.3,160,343,160,411,176C480,192,549,224,617,229.3C685.7,235,754,213,823,181.3C891.4,149,960,107,1029,90.7C1097.1,75,1166,85,1234,74.7C1302.9,64,1371,32,1406,16L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </div>
+
+    <div id="contact" style="margin-top: -50px;" class="curve" data-aos="fade-up" data-aos-duration="1000">
+      <svg class="upper-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="rgb(41, 116, 145)" fill-opacity="1" d="M0,128L34.3,160C68.6,192,137,256,206,256C274.3,256,343,192,411,160C480,128,549,128,617,154.7C685.7,181,754,235,823,224C891.4,213,960,139,1029,106.7C1097.1,75,1166,85,1234,101.3C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      <h1>Contact us</h1>
+      <div class="contact-div" data-aos="flip-up">
+        <div class="contact-info">
+          <div class="contact-sec1">
+            <img id="mail" src="images/icons/mail.jpg">
+            <a style="margin-right: 60px;" href="mailto:contact@eazydms.com">contact@eazydms.com</a>
+            <img id="phone" src="images/icons/phone.jpg">
+            <a href="tel:+918745885500">+91 8745885500</a>
+          </div>
+          <div class="contact-sec2">
+            <img style="float:left;" id="location" src="images/icons/location.jpg">
+            <div class="address">
+              Eazy ERP Technologies Private Limited,<br>
+              Head Office: 219-220, 2nd Floor,<br>
+              Vipul Agora, MG Road, Gurgaon,<br>
+              Haryana-122002, India
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a href=""><img id="icon" class="facebook" src="images/icons/facebook.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href=""><img id="icon" class="instagram" src="images/icons/instagram.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href=""><img id="icon" class="twitter" src="images/icons/twitter.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href=""><img id="icon" class="linkedin" src="images/icons/linkedin.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="var(--background)" fill-opacity="1" d="M0,128L34.3,160C68.6,192,137,256,206,256C274.3,256,343,192,411,160C480,128,549,128,617,154.7C685.7,181,754,235,823,224C891.4,213,960,139,1029,106.7C1097.1,75,1166,85,1234,101.3C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </div>
     
+    <footer>
+      <div class="footer-sec1">
+        <img src="images/logo.png">
+        <div class="rights">© Copyright Eazy ERP 4.0, 2021</div>
+      </div>
+
+      <div class="footer-sec2">
+        <a href="">Guidelines</a>
+        <a href="">Register</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="footer-sec2">  
+        <a href="">FAQ</a>
+        <a href="">Clients</a>
+        <a href="">Lists</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Security</a>
+      </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="script/script.js">
+    <script src="script/script.js"></script>
 
-    </script>
   </body>
 </html>
