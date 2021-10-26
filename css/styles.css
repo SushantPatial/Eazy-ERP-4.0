@@ -3,7 +3,7 @@
 }
 
 :root {
-  --background: #060B14;
+  --background: #060a14;
 }
 
 body::-webkit-scrollbar {
@@ -19,16 +19,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: var(--background);
+  background-color: white;
   font-family: 'Raleway', sans-serif;
   color: white;
-}
-
-
-.curve {
   overflow-x: hidden;
-  margin-top: -100px;
 }
+
 
 .curve h1 {
   font-size: 6rem;
@@ -41,29 +37,47 @@ body {
   margin: 10px;
 }
 
-.curve svg {
-  display: block;
-}
-
-.upper-curve {
-  background-color: var(--background);
-}
 
 #about {
-  background-color: rgb(241, 241, 241);
   color: black;
 }
 
-#about h1 {
-  color:rgb(7, 65, 131);
-  margin-top: -50px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid gray;
+.head-1 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0 0 15px 0;
+  background: #d9e4e7;
+  color: #4ebcc0;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.head-3 {
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+}
+
+span {
+  color: #4ebcc0;
 }
 
 .about-text {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.horizontal-line {
+  border-top: 1px solid gray;
+  width: 100%;
+  margin: 30px 0 50px 0;
 }
 
 .about-div {
@@ -86,19 +100,24 @@ body {
 
 
 #why-us {
-  background-color: navy;
+  color: black;
+  margin-top: 50px;
 }
 
 .why-us-text {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: -30px;
   text-align: center;
 }
 
 .why-us-text h1 {
-  border-bottom: 1px solid rgb(194, 194, 194);
+  font-size: 32px;
+  text-decoration: underline gray 2px;
+  text-underline-offset:50%;
   padding-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#3ca8ac;
 }
 
 .why-us-text img {
@@ -106,32 +125,40 @@ body {
   max-width: 80%;
 }
 
-
 #register {
-  background-color: aquamarine;
-  color:rgb(0, 35, 75);
+  padding: 60px 0;
+  margin: 50px 50px 30px 50px;
+  border-radius: 20px;
+  background-color: rgb(236, 247, 250);
 }
 
-#register h1 {
-  border-bottom: 1px solid rgb(49, 49, 49);
-  padding-bottom: 40px;
-  width: 90%;
+.register-text {
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form-register {
-  max-width: 360px;
-  margin: 50px auto 0px auto;
-  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0px auto 50px auto;
 }
 
 .form-control {
   margin: 20px 0;
 }
 
+.form-register .btn {
+  display: flex;
+  margin: 0 auto;
+}
+
 
 #contact {
-  background-color: rgb(41, 116, 145);
+  background-color: rgb(87, 185, 185);
 }
 
 #contact h1 {
