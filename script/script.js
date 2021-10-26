@@ -48,7 +48,7 @@ $(window).scroll(function() {
 function topFunction() {
   $("html, body").animate({
     scrollTop: 0
-  }, 100);
+  }, 600);
 }
 
 // Adding active class on scroll

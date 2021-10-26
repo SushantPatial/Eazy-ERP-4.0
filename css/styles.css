@@ -1,6 +1,4 @@
-* {
-  scroll-behavior: smooth;
-}
+
 
 :root {
   --background: #060a14;
@@ -123,6 +121,10 @@ span {
 .why-us-text img {
   margin-top: 20px;
   max-width: 80%;
+}
+
+.erp-banner {
+  margin-top: 50px;
 }
 
 #register {
