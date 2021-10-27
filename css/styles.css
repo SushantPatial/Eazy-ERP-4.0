@@ -105,9 +105,7 @@ span {
 }
 
 .about-div li {
-  list-style-image: url('/images/icons/list-arrow.png');
-  height: 25px;
-  list-style-position: inside;
+  list-style-type:none;
 }
 
 .btn {
