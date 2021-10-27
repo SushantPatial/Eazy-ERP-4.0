@@ -35,21 +35,36 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  position: relative;
+  top:20px;
 }
 
-#social-icon {
-  width: 40px;
-  margin: 7px;
-  transition: transform 0.5s, background-color 0.5s;
-  border-radius: 11px;
-}
-
-#social-icon:hover {
+.social-icon {
+  font-size: 40px;
+  color: white;
+  margin: 8px;
+  transition: transform 0.5s;
   cursor: pointer;
+}
+
+.social-icon:hover {
   transform: scale(1.15);
-  background-color: rgb(255, 255, 255);
-  border-radius: 11px;
+}
+
+.fa-facebook-square:hover {
+  color: #3F5894;
+}
+
+.fa-twitter-square:hover {
+  color: #1CA1F1;
+}
+
+.fa-linkedin:hover {
+  color: #2867B2;
+}
+
+.fa-youtube-square:hover {
+  color: #FE0000;
 }
 
 
