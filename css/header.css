@@ -9,12 +9,18 @@
   background-color: rgb(24, 24, 24);
   color: white;
   cursor: pointer;
-  padding: 10px 16px;
+  padding: 12px 15px;
+  border-radius: 50%;
   transition: background-color 0.5s ease;
 }
 
 #top-btn:hover {
   background-color: rgb(0, 12, 46);
+}
+
+#top-btn img {
+  width: 17px; 
+  filter: invert(92%) sepia(91%) saturate(1%) hue-rotate(69deg) brightness(107%) contrast(100%);
 }
 
 .sidenav {

@@ -15,7 +15,7 @@
 
   <body>
 
-    <button id="top-btn" onclick="topFunction()" title="Go to top"><img style="width: 13px" src="images/icons/up-arrow.png"></button>
+    <button id="top-btn" onclick="topFunction()" title="Go to top"><img src="images/icons/up-arrow.svg"></button>
 
     <nav class="navbar justify-content-between sticky-top">
       <a href=""><img class="navbar-brand" src="images/logo.png"></a>
@@ -67,7 +67,7 @@
               <p>This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007.</p>  
             </div>
             <p>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse" aria-expanded="false" aria-controls="collapseExample">Read more</button>
+              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
             </p>
           </div>
           <div class="about-sec2" data-aos="fade-left">
@@ -124,9 +124,9 @@
       </div>
       <div class="contact-div">
         <div class="contact-info" data-aos="fade-up-right">
-          <div class="contact-sec">
+          <div class="contact-sec" style="margin-top: -10px;">
             <img id="mail" src="images/icons/mail.jpg">
-            <a href="mailto:contact@eazydms.com">contact@eazydms.com</a>
+            <a href="mailto:contact@eazyerp.com">contact@eazyerp.com</a>
           </div>
           <div class="contact-sec">
             <img id="phone" src="images/icons/phone.jpg">
@@ -144,68 +144,34 @@
         </div>
         <form class="form-register" data-aos="fade-up-left" data-aos-offset="200">
           <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Name">
-            <input type="email" class="form-control" id="email" placeholder="Email">
-            <input type="text" class="form-control" id="number" placeholder="Number">
-            <input type="text" class="form-control" id="designation" placeholder="Designation">
-            <input type="text" class="form-control" id="company" placeholder="Company Name">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <input type="text" class="form-control" id="number" placeholder="Number" required>
+            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
+            <input type="text" class="form-control" id="company" placeholder="Company Name" required>
           </div>
-          <button type="submit" class="btn btn-primary">Register!</button>
+          <button class="register-btn">
+            Register!
+            <span></span><span></span><span></span><span></span>
+          </button>
+
         </form>
       </div>
     </section>
 
 
-    <!--
-    <div id="contact" data-aos="fade-up" data-aos-duration="1000">
-      <h1>Contact us</h1>
-      <div class="contact-div" data-aos="flip-up">
-        <div class="contact-info">
-          <div class="contact-sec1">
-            <img id="mail" src="images/icons/mail.jpg">
-            <a style="margin-right: 60px;" href="mailto:contact@eazydms.com">contact@eazydms.com</a>
-            <img id="phone" src="images/icons/phone.jpg">
-            <a href="tel:+918745885500">+91 8745885500</a>
-          </div>
-          <div class="contact-sec2">
-            <img style="float:left;" id="location" src="images/icons/location.jpg">
-            <div class="address">
-              Eazy ERP Technologies Private Limited,<br>
-              Head Office: 219-220, 2nd Floor,<br>
-              Vipul Agora, MG Road, Gurgaon,<br>
-              Haryana-122002, India
-            </div>
-          </div>
-        </div>
-        <div class="socials">
-          <a href=""><img id="icon" class="facebook" src="images/icons/facebook.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
-          <a href=""><img id="icon" class="instagram" src="images/icons/instagram.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
-          <a href=""><img id="icon" class="twitter" src="images/icons/twitter.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
-          <a href=""><img id="icon" class="linkedin" src="images/icons/linkedin.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
-        </div>
-      </div>
-    </div>
-
-    -->
-
-    
     <footer>
       <div class="footer-sec1">
         <img src="images/logo.png">
-        <div class="rights">© Copyright Eazy ERP 4.0, 2021</div>
+        <div class="rights">Copyright © 2021 Eazy Business Solutions</div>
       </div>
-
       <div class="footer-sec2">
-        <a href="">Guidelines</a>
-        <a href="">Register</a>
-        <a href="">Contact</a>
-      </div>
-      <div class="footer-sec2">  
-        <a href="">FAQ</a>
-        <a href="">Clients</a>
-        <a href="">Lists</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Security</a>
+        <div class="socials">
+          <a href="https://www.facebook.com/eazyerp"><img id="social-icon" class="facebook" src="images/icons/facebook.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href="https://twitter.com/eazyerp"><img id="social-icon" class="twitter" src="images/icons/twitter.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href="https://www.linkedin.com/company/eazy-business-solutions/mycompany/"><img id="social-icon" class="linkedin" src="images/icons/linkedin.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+          <a href="https://www.youtube.com/channel/UCiAOxBYpm4VCZqhKQI3dZNw/videos"><img id="social-icon" class="youtube" src="images/icons/youtube.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+        </div>
       </div>
     </footer>
 

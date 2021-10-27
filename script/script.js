@@ -90,3 +90,8 @@ function onScroll(event){
       }
   });
 }
+
+$(".read-more-btn").on("click", function()
+{
+  $(".read-more-arrow").toggleClass("open");
+});
