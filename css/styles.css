@@ -29,12 +29,12 @@ body {
 }
 
 .head-1 {
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 10px 24px;
   margin: 0 0 15px 0;
-  background: #c7eaf5ce;
+  background: #e0f8ffce;
   color: #3a90ca;
   display: inline-block;
   text-transform: uppercase;
@@ -51,6 +51,13 @@ body {
 }
 
 .head-3 {
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+  text-align: center;
+}
+
+.head-4 {
+  font-size:30px;
   font-weight: bold;
   color: rgb(73, 73, 73);
   text-align: center;
@@ -154,6 +161,10 @@ span {
 .open {
   transform: rotate(180deg);
   transition: transform 0.5s ease;
+}
+
+.fa-angle-double-right {
+  color:rgb(0, 162, 255);
 }
 
 .about-usp {
@@ -384,13 +395,16 @@ span {
     margin-top: 28%;
   }
   .head-1 {
-    font-size: 34px;
+    font-size: 36px;
   }
   .head-2 {
     font-size: 36px;
   }
   .head-3 {
     font-size: 30px;
+  }
+  .head-4 {
+    font-size: 34px;
   }
   .about-1 {
     flex-direction: column-reverse;
@@ -437,3 +451,40 @@ span {
 }
 
 
+/* Appealing header */
+
+.news__title {
+	line-height: 1.25;
+  text-align: center;
+}
+
+.r-link{
+  font-size: 30px;
+  font-weight: bold;
+	color: rgb(63, 63, 63) !important;
+	text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+.animated-underline{
+	--uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+	--uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 2px);
+	--uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+	--uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+	--uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+
+	background-image: linear-gradient(0, rgb(0, 162, 255) 0, rgb(0, 162, 255));
+	background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+	background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+	background-repeat: no-repeat;
+	transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.animated-underline_type5{
+	--animatedUnderlineWidth: 100%;
+	--animatedUnderlineHeight: 5px;
+	--animatedUnderlinePositionY: 105%;
+}
+
+.animated-underline_type5:hover{
+	--animatedUnderlineHeight: 1.1rem;
+}
