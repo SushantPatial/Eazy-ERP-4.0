@@ -1,9 +1,63 @@
+<?php
+
+  ini_set('display_errors', '1');
+  ini_set('display_startup_errors', '1');
+  error_reporting(E_ALL);
+
+  $link = mysqli_connect("sdb-m.hosting.stackcp.net", "eazyerp-313935e8ca", "sushant123", "eazyerp-313935e8ca");
+
+  if (mysqli_connect_error())
+  {
+    die ("Database connection error. Please try again later.");
+  }
+
+  $error="";
+  
+  if($_POST['submit'])
+  {
+    if (!$_POST["name"])
+    {
+      $error .= "A name is required";
+    }
+    if (!$_POST["email"])
+    {
+      $error .= "An email name is required";
+    }
+    if (!$_POST["number"])
+    {
+      $error .= "An number is required";
+    }
+    if (!$_POST["designation"])
+    {
+      $error .= "A designation is required";
+    }
+    if (!$_POST["company"])
+    {
+      $error .= "A company is required";
+    }
+  }
+
+  if ($error == "")
+  {
+    $name = mysqli_real_escape_string($link, $_POST['name']);
+    $email = mysqli_real_escape_string($link, $_POST['email']);
+    $number = mysqli_real_escape_string($link, $_POST['number']);
+    $designation = mysqli_real_escape_string($link, $_POST['designation']);
+    $company = mysqli_real_escape_string($link, $_POST['company']);
+
+    $query = "INSERT INTO `users` (`name`, `email`, `number`, `designation`, `company`) VALUES ('$name', '$email', '$number', '$designation', '$company')";
+    mysqli_query($link, $query);
+  }
+  
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Eazy ERP 4.0</title>
 
-    <link href="images/icons/Favicon.ico" rel="icon">
+    <link href="assets/icons/Favicon.ico" rel="icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,10 +71,10 @@
 
   <body>
 
-    <button id="top-btn" onclick="topFunction()" title="Go to top"><img src="images/icons/up-arrow.svg"></button>
+    <button id="top-btn" onclick="topFunction()" title="Go to top"><img src="assets/icons/up-arrow.svg"></button>
 
     <nav class="navbar justify-content-between sticky-top">
-      <a href="" style="width: 30%;"><img class="navbar-brand logo" src="images/logo.png"></a>
+      <a href="" style="width: 30%;"><img class="navbar-brand logo" src="assets/logo.png"></a>
 
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -50,11 +104,16 @@
       <div class="toggle-btn" onclick="openNav()">&#9776;</div>
     </nav>
 
+    <div class="hero-btns">
+      <a class="ct-btn-scroll" href="#contact"><button class="hero-btn">Reserve your seat</button></a>
+      <a class="ct-btn-scroll" href="#about"><button class="hero-btn">Know more</button></a>
+    </div>
+
     <video autoplay muted loop id="home">
-      <source src="images/video.mp4" type="video/mp4">
+      <source src="assets/video.mp4" type="video/mp4">
     </video>
 
-    <a class="ct-btn-scroll" href="#about"><img id="arrow" alt="Arrow Down Icon" style="max-width: 100%;" src="images/icons/down-arrow.png"></a>
+    
           
     <a href="#contact"><button class="book-seat-btn">Reserve your seat!</button></a>
     <section id="about" data-aos="fade-up" data-aos-duration="1000">
@@ -73,17 +132,17 @@
               <p>This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007.</p>  
             </div>
             <p>
-              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-1">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
+              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-1">Read More <img class="read-more-arrow" src="assets/icons/read-more.svg"></button>
             </p>
           </div>
           <div class="about-sec2" data-aos="fade-left">
-            <img class="erp-img" src="images/ERP.png">
+            <img class="erp-img" src="assets/ERP.png">
           </div>
         </div>
 
         <div class="about-div about-2">
           <div class="about-sec2" data-aos="fade-right">
-            <img class="about-img" src="images/about.png">
+            <img class="about-img" src="assets/about.png">
           </div>
           <div class="about-sec1" style="margin-top: 50px;" data-aos="fade-left">
             <h4 class="head-3">An ERP with the simplicity of <span>Tally</span> and <span>Power</span> of ERP</h4>
@@ -95,7 +154,7 @@
               <p>You Demand more, Industry Demands More and Businesses Demands Even More.</p>  
             </div>
             <p>
-              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-2">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
+              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-2">Read More <img class="read-more-arrow" src="assets/icons/read-more.svg"></button>
             </p>
           </div>
         </div>
@@ -106,37 +165,37 @@
             <div class="horizontal-line-2"></div>
             <div class="usps">
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/Tally Busy.svg">
+                <img class="card-img-top" src="assets/USP/Tally Busy.svg">
                 <div class="card-body">
                   <h5 class="card-title">Tally/ Busy Integration</h5>
                 </div>
               </div>
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/Unlimited User.svg">
+                <img class="card-img-top" src="assets/USP/Unlimited User.svg">
                 <div class="card-body">
                   <h5 class="card-title">Unlimited User License</h5>
                 </div>
               </div>
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/Extensive.svg">
+                <img class="card-img-top" src="assets/USP/Extensive.svg">
                 <div class="card-body">
                   <h5 class="card-title">Extensive and In-depth Customization</h5>
                 </div>
               </div>
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/User Document.svg">
+                <img class="card-img-top" src="assets/USP/User Document.svg">
                 <div class="card-body">
                   <h5 class="card-title">User Definable Document Printouts</h5>
                 </div>
               </div>
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/Advance Report.svg">
+                <img class="card-img-top" src="assets/USP/Advance Report.svg">
                 <div class="card-body">
                   <h5 class="card-title">Advanced Reporting System</h5>
                 </div>
               </div>
               <div class="card diagonal-left">
-                <img class="card-img-top" src="images/USP/User Definable.svg">
+                <img class="card-img-top" src="assets/USP/User Definable.svg">
                 <div class="card-body">
                   <h5 class="card-title">User Definable Parameters</h5>
                 </div>
@@ -151,7 +210,7 @@
 
 
     <a href="#contact">
-      <img class="erp-banner" src="images/ERP4.0.png" data-aos="fade-up">
+      <img class="erp-banner" src="assets/ERP4.0.png" data-aos="fade-up">
     </a>
     
     <section id="contact" data-aos="fade-up" data-aos-duration="1000">
@@ -163,15 +222,15 @@
       <div class="contact-div">
         <div class="contact-info" data-aos="fade-up-right">
           <div class="contact-sec" style="margin-top: -10px;">
-            <img id="mail" src="images/icons/mail.jpg">
+            <img id="mail" src="assets/icons/mail.jpg">
             <a href="mailto:contact@eazyerp.com">contact@eazyerp.com</a>
           </div>
           <div class="contact-sec">
-            <img id="phone" src="images/icons/phone.jpg">
+            <img id="phone" src="assets/icons/phone.jpg">
             <a href="tel:+918745885500">+91 8745885500</a>
           </div>
           <div class="contact-sec">
-            <img style="float:left;" id="location" src="images/icons/location.jpg">
+            <img style="float:left;" id="location" src="assets/icons/location.jpg">
             <div class="address">
               Eazy ERP Technologies Pvt. Ltd.<br>
               Head Office: 219-220, 2nd Floor<br>
@@ -180,19 +239,16 @@
             </div>
           </div>
         </div>
-        <form class="form-register" data-aos="fade-up-left" data-aos-offset="200">
+        <form class="form-register" method="post" data-aos="fade-up-left" data-aos-offset="200">
           <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Name" required>
-            <input type="email" class="form-control" id="email" placeholder="Email" required>
-            <input type="text" class="form-control" id="number" placeholder="Number" required>
-            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
-            <input type="text" class="form-control" id="company" placeholder="Company Name" required>
+            <input type="text" class="form-control" name="name" placeholder="Name" required>
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+            <input type="text" class="form-control" name="number" placeholder="Number" required>
+            <input type="text" class="form-control" name="designation" placeholder="Designation" required>
+            <input type="text" class="form-control" name="company" placeholder="Company Name" required>
+            <input type="submit" name="submit" class="register-btn" value="Register!">
           </div>
-          <button class="register-btn">
-            Register!
-            <span></span><span></span><span></span><span></span>
-          </button>
-
+          
         </form>
       </div>
     </section>
@@ -200,7 +256,7 @@
 
     <footer>
       <div class="footer-sec1">
-        <img class="logo" src="images/logo.png">
+        <img class="logo" src="assets/logo.png">
         <div class="rights">Copyright © 2021 Eazy Business Solutions</div>
       </div>
       <div class="footer-sec2">
