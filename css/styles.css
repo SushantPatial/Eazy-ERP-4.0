@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: white;
+  background-image: linear-gradient(135deg, rgba(183, 250, 255, 0.459), rgba(119, 147, 240, 0.507), rgba(160, 247, 253, 0.459));
   font-family: 'Raleway', sans-serif;
   color: white;
   overflow-x: hidden;
@@ -29,17 +29,25 @@ body {
 }
 
 .head-1 {
-  font-size: 15px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 700;
-  padding: 8px 20px;
+  padding: 10px 24px;
   margin: 0 0 15px 0;
-  background: #d9e4e798;
-  color: #4ebcc0;
+  background: #ecf9fd9a;
+  color: #3a90ca;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
   text-align: center;
+}
+
+.head-2 {
+  font-size: 34px;
+  text-align: center; 
+  color:rgb(56, 56, 56); 
+  font-weight: bold; 
+  margin-top: 50px
 }
 
 .head-3 {
@@ -49,7 +57,7 @@ body {
 }
 
 span {
-  color: #4ebcc0;
+  color: #2a86c4;
 }
 
 .about-text {
@@ -67,6 +75,12 @@ span {
   margin: 30px 0 50px 0;
 }
 
+.horizontal-line-2 {
+  border-top: 3px solid rgb(0, 89, 255); 
+  width: 20%; 
+  margin: 10px auto 20px auto;
+}
+
 .about-div {
   display: flex;
   justify-content: center;
@@ -75,6 +89,9 @@ span {
 }
 
 .about-sec1 {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(236, 247, 250, 0.301);
   width: 60%;
 }
 
@@ -139,6 +156,46 @@ span {
   transition: transform 0.5s ease;
 }
 
+.usps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px;
+  width: 15rem;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(57, 103, 133, 0.664);
+  border: none;
+  transition: 0.8s ease;
+}
+
+.card:hover {
+  color: white;
+}
+
+.diagonal-left {
+  background-image:linear-gradient(to top right,rgb(118, 182, 255) 55%,rgb(243, 243, 243) 50%);
+  background-size: 200% 200%;
+  background-position:top right;
+}
+
+.diagonal-left:hover {
+  background-position:bottom left;
+}
+
+.card-img-top {
+  width: 100px;
+  margin: 30px auto 10px auto;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 .erp-banner {
   margin-top: 50px;
@@ -149,7 +206,7 @@ span {
   padding: 60px 0;
   margin: 50px 50px 30px 50px;
   border-radius: 20px;
-  background-color: rgb(236, 247, 250);
+  background-color: rgba(236, 247, 250, 0.603);
   color: rgb(22, 33, 75);
   font-weight: bold;
 }
@@ -200,7 +257,6 @@ span {
 
 .address {
   float: left;
-  max-width: 300px;
   margin-top: 9px;
 }
 
@@ -275,7 +331,103 @@ span {
   --n: 4;
 }
 
+.book-seat-btn {
+  display: none;
+  transform: rotate(270deg);
+  position: fixed;
+  top: 45%;
+  right: -100px;
+  z-index: 100;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #07a0e7;
+  color: white;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #0873d6;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.book-seat-btn:hover {
+  box-shadow: inset 0 0 0 50px #0873d6;
+}
+
+.book-seat-btn:focus {
+  outline: none;
+}
 
 
+@media screen and (max-width: 1000px) {
+  #top-btn {
+    bottom: 50px;
+    right: 50px;
+    padding: 24px 24px;
+  }
+  #top-btn img {
+    width: 24px;
+  }
+  .logo {
+    width: 130px;
+  }
+  .toggle-btn {
+    font-size:34px;
+    margin-right: 50px;
+    padding: 1px 11px;
+  }
+  #home {
+    top: -140px;
+  }
+  .head-1 {
+    font-size: 34px;
+  }
+  .head-2 {
+    font-size: 36px;
+  }
+  .head-3 {
+    font-size: 30px;
+  }
+  .about-1 {
+    flex-direction: column-reverse;
+    font-size: 22px;
+  }
+  .about-2 {
+    flex-direction: column;
+    font-size: 22px;
+  }
+  .about-sec1 {
+    width: 100%;
+  }
+  .about-sec2 {
+    width: 80%;
+    padding: 20px 0px;
+  }
+  .contact-div {
+    flex-direction: column;
+  }
+  .contact-info {
+    width: 100%;
+    font-size: 22px;
+  }
+  .form-register {
+     width: 100%;
+  }
+  .form-group {
+    width: 60%;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .footer-sec1 img{
+    width: 110px !important;
+  }
+  .rights {
+    font-size: 16px !important;
+  }
+}
 
 

@@ -3,8 +3,9 @@
   <head>
     <title>Eazy ERP 4.0</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="images/icons/Favicon.ico" rel="icon">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -19,7 +20,7 @@
     <button id="top-btn" onclick="topFunction()" title="Go to top"><img src="images/icons/up-arrow.svg"></button>
 
     <nav class="navbar justify-content-between sticky-top">
-      <a href=""><img class="navbar-brand" src="images/logo.png"></a>
+      <a href="" style="width: 30%;"><img class="navbar-brand logo" src="images/logo.png"></a>
 
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -28,8 +29,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Book a Seat</a>
+        </li>
         <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" style="font-family:Arial, Helvetica, sans-serif;" href="tel:+918745885500"><i class="fas fa-phone-alt"></i>&nbsp;+91 8745885500</a>
         </li>
       </ul>
 
@@ -40,6 +44,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a style="font-family:Arial, Helvetica, sans-serif;" href="tel:+918745885500"><i class="fas fa-phone-alt"></i>&nbsp;+918745885500</a>
       </div>
    
       <div class="toggle-btn" onclick="openNav()">&#9776;</div>
@@ -51,24 +56,24 @@
 
     <a class="ct-btn-scroll" href="#about"><img id="arrow" alt="Arrow Down Icon" style="max-width: 100%;" src="images/icons/down-arrow.png"></a>
           
-
+    <a href="#contact"><button class="book-seat-btn">Reserve your seat!</button></a>
     <section id="about" data-aos="fade-up" data-aos-duration="1000">
       <div class="about-text">
         <h1 class="head-1">About</h1>
         <h3 class="head-3">We intend to <span>create value</span> and <span>empower</span> all type of businesses</h3>
         <div class="horizontal-line"></div>
         
-        <div class="about-div">
+        <div class="about-div about-1">
           <div class="about-sec1" data-aos="fade-right">
             <p>Enterprise Resource Planning System, a software which made a significant impact in the life of Indian Manufacturers by remodeling their existing manual system of working to Automating it.</p>
             <p>A system which was ideally designed to track the activities has travelled leaps and miles from being a mere tracking system to a virtual member that monitors, tracks and guides the users in order to streamline and maintain the operational efficiency of the business.</p>
             <p>Ever Since 2001, the market has been penetrated with hundreds of ERP players, everyone stating themselves as the best. As we dug down more and more we realized that most of the small & mid size companies still resisting to move towards IT due to multiple reason such as budget constraints, hassle of using 2 different softwares, Security issues, to name a few.</p>
-            <div class="collapse" id="about-collapse">
+            <div class="collapse" id="about-collapse-1">
               <p>This is how Eazy came into picture with a vision of making latest technology available at affordable prices with its unique preposition and simultaneously catering the key challenges of SME Manufacturers thereby making their lives Easy!</p>
               <p>This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007.</p>  
             </div>
             <p>
-              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
+              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-1">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
             </p>
           </div>
           <div class="about-sec2" data-aos="fade-left">
@@ -76,40 +81,72 @@
           </div>
         </div>
 
-        <div class="about-div">
+        <div class="about-div about-2">
           <div class="about-sec2" data-aos="fade-right">
             <img class="about-img" src="images/about.png">
           </div>
           <div class="about-sec1" style="margin-top: 50px;" data-aos="fade-left">
-            <h4 style="text-align: center; color: rgb(56, 56, 56);">An ERP with the simplicity of <span>Tally</span> and <span>Power</span> of ERP</h4>
+            <h4 class="head-3">An ERP with the simplicity of <span>Tally</span> and <span>Power</span> of ERP</h4>
             <p>The Only Enterprise level ERP bridging the gap between Indian SMEs & Technology by providing an ERP which does not have a finance module & uses their Tally instead, allowing them to easily adapt to new systems without making any changes in Finance sphere.</p>
             <p>At Present, Eazy has helped 100’s of companies to manage complete end-to-end manufacturing operations like Sales, Purchase, Stage wise Production Management including WIP, Inventory Management, Quality Control etc. with comprehensive integration with Tally Accounting Software</p>
             <p>With time, to cater more and more Companies Eazy ERP made its integration with second widely used accounting software, “Busy”! Also, keeping in mind that companies vary in size and numbers Eazy launched its hybrid model i.e. On-Premises and Saas so that most of small and mid-sized companies can take leverage of it.</p>
+            <div class="collapse" id="about-collapse-2">
+              <p>Earlier books were known as your buddy. However 21st generation would state mobile gadgets and internet as your Nxt Buddy. Eazy aims to make Eazy ERP 4.0 every manufactures Best Buddy.</p>
+              <p>You Demand more, Industry Demands More and Businesses Demands Even More.</p>  
+            </div>
+            <p>
+              <button class="read-more-btn btn btn-primary" type="button" data-toggle="collapse" data-target="#about-collapse-2">Read More <img class="read-more-arrow" src="images/icons/read-more.svg"></button>
+            </p>
           </div>
         </div>
 
         <div class="about-div">
-          <div class="about-sec3" data-aos="fade-right">
-            <h4 style="color: rgb(56, 56, 56); margin-top: 50px;">Unique Selling Proposition:</h4>
-            <ul>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; Tally/ Busy Integration</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; Unlimited User License</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; Extensive and In-depth Customization</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; User Definable Document Printouts</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; Advanced Reporting System</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; User Definable Parameters</li>
-              <li><img src="images/icons/list-arrow.png">&nbsp;&nbsp; Open Source Database </li>
-            </ul>
-            <p>Earlier books were known as your buddy. However 21st generation would state mobile gadgets and internet as your Nxt Buddy. Eazy aims to make Eazy ERP 4.0 every manufactures Best Buddy.
-            You Demand more, Industry Demands More and Businesses Demands Even More</p>
-          </div>
-          <div class="about-sec4" data-aos="fade-left">
-            <img class="usp-img" src="images/usp.png">
+          <div class="about-usp">
+            <h3 class="head-2">UNIQUE SELLING PROPOSITION</h3>
+            <div class="horizontal-line-2"></div>
+            <div class="usps">
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/Tally Busy.svg">
+                <div class="card-body">
+                  <h5 class="card-title">Tally/ Busy Integration</h5>
+                </div>
+              </div>
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/Unlimited User.svg">
+                <div class="card-body">
+                  <h5 class="card-title">Unlimited User License</h5>
+                </div>
+              </div>
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/Extensive.svg">
+                <div class="card-body">
+                  <h5 class="card-title">Extensive and In-depth Customization</h5>
+                </div>
+              </div>
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/User Document.svg">
+                <div class="card-body">
+                  <h5 class="card-title">User Definable Document Printouts</h5>
+                </div>
+              </div>
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/Advance Report.svg">
+                <div class="card-body">
+                  <h5 class="card-title">Advanced Reporting System</h5>
+                </div>
+              </div>
+              <div class="card diagonal-left">
+                <img class="card-img-top" src="images/USP/User Definable.svg">
+                <div class="card-body">
+                  <h5 class="card-title">User Definable Parameters</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div> 
 
-      <h3 style="text-align: center; color:rgb(56, 56, 56); font-weight: bold; margin-top: 50px">Stay Tuned for taking <span>MORE</span>!</h3>
+      <h3 class="head-2">Stay Tuned for taking <span>MORE</span>!</h3>
     </section>
 
 
@@ -163,7 +200,7 @@
 
     <footer>
       <div class="footer-sec1">
-        <img src="images/logo.png">
+        <img class="logo" src="images/logo.png">
         <div class="rights">Copyright © 2021 Eazy Business Solutions</div>
       </div>
       <div class="footer-sec2">

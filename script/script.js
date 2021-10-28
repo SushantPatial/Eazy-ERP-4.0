@@ -31,8 +31,17 @@ $(window).scroll(function() {
 $(window).scroll(function() {
   if ($(this).scrollTop() > 100) {
     $('#top-btn').fadeIn();
+    
   } else {
     $('#top-btn').fadeOut();
+  }
+});
+// Reserve your seat button
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200) {
+    $('.book-seat-btn').fadeIn();
+  } else {
+    $('.book-seat-btn').fadeOut();
   }
 });
 
