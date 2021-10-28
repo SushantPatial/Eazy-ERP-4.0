@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-image: linear-gradient(135deg, rgba(183, 250, 255, 0.459), rgba(119, 147, 240, 0.507), rgba(160, 247, 253, 0.459));
+  background-image: linear-gradient(135deg, rgba(183, 250, 255, 0.459), rgba(227, 232, 252, 0.507), rgba(160, 247, 253, 0.459));
   font-family: 'Raleway', sans-serif;
   color: white;
   overflow-x: hidden;
@@ -34,7 +34,7 @@ body {
   font-weight: 700;
   padding: 10px 24px;
   margin: 0 0 15px 0;
-  background: #ecf9fd9a;
+  background: #c7eaf5ce;
   color: #3a90ca;
   display: inline-block;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ span {
 .about-sec1 {
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: rgba(236, 247, 250, 0.301);
+  background-color: rgba(195, 240, 252, 0.301);
   width: 60%;
 }
 
@@ -156,6 +156,10 @@ span {
   transition: transform 0.5s ease;
 }
 
+.about-usp {
+  width: 100%;
+}
+
 .usps {
   display: flex;
   justify-content: center;
@@ -164,8 +168,8 @@ span {
 }
 
 .card {
-  margin: 30px;
-  width: 15rem;
+  margin: 10px;
+  width: 11rem;
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(57, 103, 133, 0.664);
   border: none;
@@ -187,11 +191,12 @@ span {
 }
 
 .card-img-top {
-  width: 100px;
+  width: 70px;
   margin: 30px auto 10px auto;
 }
 .card-title {
-  font-size: 19px;
+  color: black;
+  font-size: 13px;
   font-weight: bold;
   text-align: center;
 }
@@ -206,7 +211,7 @@ span {
   padding: 60px 0;
   margin: 50px 50px 30px 50px;
   border-radius: 20px;
-  background-color: rgba(236, 247, 250, 0.603);
+  background-color: rgba(211, 237, 243, 0.603);
   color: rgb(22, 33, 75);
   font-weight: bold;
 }
@@ -229,10 +234,11 @@ span {
 }
 
 .contact-info {
-  width: 50%;
+  margin-left:10%;
+  width: 40%;
   display: flex;
-  justify-content:left;
-  align-items:center;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -338,6 +344,21 @@ span {
   outline: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-usp {
+    width: 70%;
+  }
+  .card {
+    margin: 20px;
+    width: 14rem;
+  }
+  .card-img-top {
+    width: 100px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   #top-btn {
@@ -392,12 +413,17 @@ span {
   .contact-info {
     width: 100%;
     font-size: 22px;
+    margin-left: 0;
+    align-items: center;
   }
   .form-register {
      width: 100%;
   }
   .form-group {
     width: 60%;
+  }
+  .card {
+    width: 15rem;
   }
   .card-title {
     font-size: 22px;
