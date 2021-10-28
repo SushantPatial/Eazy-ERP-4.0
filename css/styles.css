@@ -16,7 +16,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  /* background-image: linear-gradient(135deg, rgba(183, 250, 255, 0.459), rgba(227, 232, 252, 0.507), rgba(160, 247, 253, 0.459)); */
   background-color: white;
   font-family: 'Raleway', sans-serif;
   color: white;
