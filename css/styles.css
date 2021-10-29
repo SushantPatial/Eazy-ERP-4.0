@@ -28,29 +28,40 @@ body {
   color: black;
 }
 
+/* Appealing header */
+
 .head-1 {
-  font-size: 32px;
-  letter-spacing: 1px;
+  color:rgb(73, 73, 73);
+  font-size: 25px;
   font-weight: 700;
-  padding: 10px 24px;
-  margin: 0 0 15px 0;
-  background: #e0f8ffce;
-  color: rgb(23, 96, 231);
-  display: inline-block;
   text-transform: uppercase;
-  border-radius: 50px;
   text-align: center;
+  cursor: default;
+  padding-bottom:10px;
+}
+.head-1 span {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgb(197, 225, 226) 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  font-size: 1em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.head-1:hover span {
+  background-position: -99.99% 0;
 }
 
 .head-2 {
-  font-size: 34px;
+  font-size: 37px;
   text-align: center; 
   color:rgb(56, 56, 56); 
   font-weight: bold; 
-  margin-top: 50px
+  margin-top: 10px;
 }
 
 .head-3 {
+  font-size: 32px;
   font-weight: bold;
   color: rgb(73, 73, 73);
   text-align: center;
@@ -76,16 +87,10 @@ span {
   flex-direction: column;
 }
 
-.horizontal-line {
-  border-top: 1px solid gray;
-  width: 100%;
-  margin: 30px 0 50px 0;
-}
-
 .horizontal-line-2 {
   border-top: 3px solid rgb(0, 89, 255); 
-  width: 20%; 
-  margin: 10px auto 20px auto;
+  width: 200px; 
+  margin: 10px auto 50px auto;
 }
 
 .about-div {
@@ -394,9 +399,6 @@ span {
   .hero-btns {
     margin-top: 28%;
   }
-  .head-1 {
-    font-size: 36px;
-  }
   .head-2 {
     font-size: 36px;
   }
@@ -451,26 +453,3 @@ span {
 }
 
 
-/* Appealing header */
-
-.title {
-  color:rgb(73, 73, 73);
-  display: table-cell;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: default;
-  padding-bottom:10px;
-}
-.title span {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgb(197, 225, 226) 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  font-size: 1em;
-  line-height: 1.15em;
-  text-decoration: none;
-  transition: all 0.5s ease-out;
-}
-.title:hover span {
-  background-position: -99.99% 0;
-}

@@ -1,15 +1,6 @@
 <?php
-
-  ini_set('display_errors', '1');
-  ini_set('display_startup_errors', '1');
-  error_reporting(E_ALL);
-
-  $link = mysqli_connect("sdb-m.hosting.stackcp.net", "eazyerp-313935e8ca", "sushant123", "eazyerp-313935e8ca");
-
-  if (mysqli_connect_error())
-  {
-    die ("Database connection error. Please try again later.");
-  }
+  
+  include("connection.php");
 
   $error="";
   
@@ -114,14 +105,12 @@
     </video>
 
     
-          
     <a href="#contact"><button class="book-seat-btn">Reserve your seat!</button></a>
+    
     <section id="about" data-aos="fade-up" data-aos-duration="1000">
       <div class="about-text">
-        <h1 class="head-1">About</h1>
-        <h3 class="head-3">We intend to <span>create value</span> and <span>empower</span> all type of businesses</h3>
-        <div class="horizontal-line"></div>
-        
+        <h3 class="head-2" style="margin-bottom: 0px;">How it <span>Started</span></h3>
+        <div class="horizontal-line-2"></div>
         <div class="about-div about-1">
           <div class="about-sec1" data-aos="fade-right">
             <p>Enterprise Resource Planning System, a software which made a significant impact in the life of Indian Manufacturers by <strong><span style="color: rgb(73, 73, 73)">remodeling their existing manual system</span></strong> of working to Automating it.</p>
@@ -147,12 +136,10 @@
           <div class="about-sec2" data-aos="fade-right">
             <img class="about-img" src="assets/about.png">
           </div>
-          <div class="about-sec1 news" style="margin-top: 50px;" data-aos="fade-left">
-            <h3 class="title">
+          <div class="about-sec1" style="margin-top: 50px;" data-aos="fade-left">
+            <h3 class="head-1">
               An ERP with the simplicity of <span>Tally</span> and <span>Power</span> of ERP
             </h3>
-
-          
             <p>The Only Enterprise level ERP <strong><span style="color: rgb(73, 73, 73)">bridging the gap</span></strong> between Indian <strong><span style="color: rgb(73, 73, 73)">SMEs & Technology</span></strong> by providing an ERP which does not have a finance module & uses their Tally instead.</p>
             <p>Eazy ERP made its integration with second widely used accounting software, “Busy”!</p>
             <p>Also, keeping in mind that companies vary in size and numbers Eazy launched its hybrid model 
@@ -172,7 +159,7 @@
     <section>
       <div class="about-div" data-aos="fade-up">
         <div class="about-usp">
-          <h3 class="head-2">UNIQUE SELLING PROPOSITION</h3>
+          <h3 class="head-2" style="margin-top: 60px;">Why You Need <span>Eazy ERP</span>?</h3>
           <div class="horizontal-line-2"></div>
           <div class="usps">
             <div class="card diagonal-left">
@@ -215,7 +202,7 @@
         </div>
       </div>
 
-      <h3 class="head-2" style="width: 80%; margin: 50px auto 10px auto;">You Demand <span>more</span>, Industry Demands <span>more</span> and Businesses Demands Even <span>MORE</span>!</h3>
+      <h3 class="head-3" style="width: 80%; margin: 50px auto 10px auto;">You Demand <span>more</span>, Industry Demands <span>more</span> and Businesses Demands Even <span>MORE</span>!</h3>
     </section>
 
 
@@ -224,9 +211,8 @@
     </a>
     
     <section id="contact" data-aos="fade-up" data-aos-duration="1000">
-        <h3 class="head-3" style="font-size: 38px;">Reserve your <span>seat</span> now!</h3>
-        <div class="horizontal-line"></div>
-      </div>
+      <h3 class="head-2">Reserve your <span>seat</span> now!</h3>
+      <div class="horizontal-line-2"></div>
       <div class="contact-div">
         <div class="contact-info" data-aos="fade-up-right">
           <div class="contact-sec" style="margin-top: -10px;">
