@@ -189,10 +189,14 @@ span {
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(57, 103, 133, 0.664);
   border: none;
-  transition: 0.8s ease;
+  transition: all 0.8s ease;
 }
 
-.card:hover {
+.card-title {
+  transition: all 0.8s ease;
+}
+
+.card:hover .card-title{
   color: white;
 }
 
@@ -300,7 +304,43 @@ span {
 
 .form-control {
   margin: 10px 0;
-  margin-left: 30px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-top {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+  
+.floating-label {
+  pointer-events: none;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  font-weight: normal;
+  color: rgb(56, 56, 56);
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+  z-index: 9;
+}
+
+.form-top input:focus + .floating-label, input:not(:placeholder-shown) + .floating-label {
+  opacity: 1;
+  transform: scale(0.75) translateY(-150%) translateX(-6px);
+  font-size: 16px;
+}
+
+/* For IE Browsers*/
+.form-top input:focus + .floating-label, input:not(:-ms-input-placeholder) + .floating-label {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
 
 .register-btn {

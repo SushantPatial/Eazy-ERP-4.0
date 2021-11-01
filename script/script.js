@@ -76,7 +76,7 @@ $(document).ready(function () {
   });
 });
 
-function onScroll(event){
+function onScroll(event) {
   var scrollPos = $(document).scrollTop();
   $('.navbar-nav a').each(function () {
       var currLink = $(this);
@@ -85,13 +85,18 @@ function onScroll(event){
           $('.navbar-nav ul li').removeClass("active");
           currLink.addClass("active");
       }
-      else{
+      else {
           currLink.removeClass("active");
       }
   });
 }
 
-$(".read-more-btn").on("click", function()
-{
+// Read more button in about
+$(".read-more-btn").on("click", function() {
   $(".read-more-arrow").toggleClass("open");
+});
+
+// Form submission
+$("form").on('submit', function() {
+  alert("Thank you for registering. We'll get back to you as soon as possible!");
 });
