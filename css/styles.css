@@ -100,6 +100,10 @@ span {
   flex-wrap: wrap;
 }
 
+.about-2 {
+  margin-top: 50px;
+}
+
 .about-sec1 {
   padding: 20px 30px;
   border-radius: 10px;
@@ -119,13 +123,14 @@ span {
   width: 50%;
 }
 
-.erp-img {
-  max-width: 100%;
+.about-img-1 {
+  width: 100%;
+  padding-left: 50px;
 }
 
-.about-img {
-  max-width: 100%;
-  padding-right: 30px;
+.about-img-2 {
+  width: 100%;
+  padding-right: 50px;
 }
 
 .usp-img {
@@ -416,6 +421,15 @@ span {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .about-sec1 {
+    width: 50%;
+  }
+  .about-sec2 {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #top-btn {
     bottom: 50px;
@@ -460,8 +474,19 @@ span {
     width: 100%;
   }
   .about-sec2 {
-    width: 80%;
+    width: 100%;
     padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img-1 {
+    width: 400px;
+    padding: 0 0 20px 0;
+  }
+  .about-img-2 {
+    width: 400px;
+    padding: 0 0 20px 0;
   }
   .contact-div {
     flex-direction: column;
