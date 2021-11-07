@@ -132,17 +132,17 @@
   background-color: #05172285;
 }
 
-.navbar-brand {
+.logo {
   width: 85px;
   margin-left: 70px;
 }
 
 #home {
   position: relative;
-  top: -110px;
+  top: -100px;
   width: 100%;
   object-fit: cover;
-  border-bottom: 5px solid rgb(134, 134, 134);
+  
 }
 
 .hero-btns {
